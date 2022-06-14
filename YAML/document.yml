@@ -1,0 +1,73 @@
+# YAML can be saved as .yml or .yaml
+# This is profile of cricketer Sachin Tendulakar
+
+--- #Player statistics
+#mappings
+# key - value pairs
+
+# scalar value - No quote
+player_name: Sachin Tendulkar
+# Scalar value with single quote
+full_name: 'Sachin Ramesh Tendulkar'
+# Scalar value with double quote
+born_in: "Mumbai, \t Maharashtra\n India"
+# integer
+age: 48
+# boolean
+retired: true
+# NaN
+three_centuries: .nan
+# infinity
+number_of_fans: -.inf
+# float
+height: !!float 5.5
+# explicit definition - type conversion
+Year_of_birth: !!str 1973
+
+## Sequences
+teams: 
+    - 'India'
+    - Mumbai
+    - Yorkshire
+    - Mumbai Indians
+    - Asia XI
+
+skills: 
+  - batting: 
+    - batting_style:
+      - right hand batsman
+      - opening batsman
+  - bowling:
+    - right arm off spin
+    - googly bowler
+  - fielding:
+    - slips
+    - long off
+
+description: | 
+ Sachin Tendulkar has been the most 
+ complete batsman of his time, 
+ the most prolific runmaker 
+ of all time, and arguably the 
+ biggest cricket icon the game has ever known.
+
+## Keys with special characters
+#Batting & fielding:
+#"Indian Cricket \t teams":
+#Jersey number:
+
+--- ## Batting stats
+matches: 200
+innings: 329
+not_outs: 33
+runs: 15921
+
+--- ## Bowling stats
+
+overs: 706.4
+maidens: 83
+wickets: 46
+
+
+
+
